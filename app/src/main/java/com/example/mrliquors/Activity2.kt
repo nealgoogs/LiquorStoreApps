@@ -12,9 +12,15 @@ class Activity2 : AppCompatActivity() {
         setContentView(R.layout.activity_2)
 
         val btn1 : Button = findViewById(R.id.tall_boys)
+        val btn2 : Button = findViewById(R.id.cases)
 
         btn1.setOnClickListener {
             val intent = Intent(this,TallBoys::class.java)
+            startActivity(intent)
+        }
+
+        btn2.setOnClickListener {
+            val intent = Intent(this, ::class.java)
             startActivity(intent)
         }
     }
